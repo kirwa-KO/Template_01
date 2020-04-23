@@ -15,7 +15,7 @@
 
 body
 {
-	height: 4000px;
+	height: 6000px;
 }
 
 .upper-bar
@@ -67,6 +67,11 @@ body
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
+	color: var(--primary);
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
 }
 
 .navbar-light .navbar-nav .active > .nav-link
@@ -169,10 +174,14 @@ body
 {
 	background-color: var(--second);
 	color: #FFF;
-	padding-top: 7px;
+	padding-top: 9px;
 	margin-bottom: 10px;
 	width: 50px;
 	height: 50px;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
 }
 
 .feauters h3
@@ -184,6 +193,12 @@ body
 .feauters p
 {
 	color: #989898;
+}
+
+.feauters i:hover
+{
+	/* opacity: .6; */
+	background-color: var(--primary);
 }
 
 /* end feauters */
@@ -451,17 +466,32 @@ body
 .pricing-table
 {
 	background-color: #f7f7f7;
-	padding: 100px 0 100px;
+	padding: 100px 15px 100px;
 }
 
 .pricing-table .card
 {
 	margin-bottom: 30px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+@media (min-width: 992px)
+{
+	.pricing-table .col-lg-3
+	{
+		position: relative;
+		left: 175px;
+	}
+	.pricing-table .card.corporate
+{
+	position: relative;
+	top: -20px;
+}
 }
 
 .pricing-table .card-body
 {
-	/* background-color: red; */
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -489,8 +519,8 @@ body
 
 .pricing-table .row .card
 {
-	margin-left: 50px;
-	margin-right: 50px;
+	margin: 0;
+	margin-bottom: 30px;
 }
 
 .pricing-table .card .card-title
@@ -539,11 +569,11 @@ body
 	text-transform: uppercase;
 }
 
-.pricing-table .card.corporate
+/* .pricing-table .card.corporate
 {
 	position: relative;
 	top: -20px;
-}
+} */
 
 .pricing-table .card.corporate .card-text
 {
@@ -556,3 +586,215 @@ body
 }
 
 /* end the pricing table */
+
+
+
+/* start why choose us */
+
+.choose-us img
+{
+	max-width: 100%;
+}
+
+.choose-us .col-6
+{
+	padding: 0;
+}
+
+.choose-us .col-6:last-child
+{
+	background-color: var(--primary);
+	color: #FFF;
+	padding-top: 50px;
+}
+
+.choose-us .h1
+{
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.choose-us p
+{
+	margin-top: 10px;
+	margin-left: 30px;
+	line-height: 2;
+	font-size: 18px;
+}
+
+.choose-us .read-more
+{
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 10px 0 10px 30px;
+	background-color: var(--second);
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* end why choose us */
+
+
+/* start stats */
+
+.stats
+{
+	padding: 100px 0;
+	color: var(--primary);
+}
+
+.stats .stats-boxs
+{
+	margin-bottom: 40px;
+}
+
+.stats .number
+{
+	display: block;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.stats p
+{
+	color: var(--second);
+	font-size: 20px;
+	margin: 0;
+}
+
+/* end stats */
+
+
+/* start contact us */
+
+.contact-us
+{
+	padding: 50px 0;
+	background-color: var(--second);
+	color: #FFF;
+	font-size: 25px;
+}
+
+.contact-us p
+{
+	margin: 0;
+}
+
+.contact-us a
+{
+	color: #FFF;
+	border: 2px solid #FFF;
+	padding: 6px 15px 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* end contact us */
+
+/* start footer */
+
+.footer
+{
+	padding: 100px 0;
+}
+
+.footer .site-info h2
+{
+	font-size: 50px;
+	margin-bottom: 35px;
+}
+
+.footer .site-info h2 span:first-of-type
+{
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.footer .site-info h2 span:last-of-type
+{
+	color: var(--second);
+}
+
+.footer .site-info p
+{
+	line-height: 1.8;
+	color: #727272
+}
+
+.footer .site-info a
+{
+	color: var(--primary);
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.footer .site-info a::before
+{
+	font-family: 'FontAwesome';
+	content: "\f138";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.footer .helpful-link h2,
+.footer .footer-contact h2
+{
+	font-size: 22px;
+	color: var(--primary);
+	margin-bottom: 68px;
+}
+
+.footer .helpful-link ul li
+{
+	color: var(--primary);
+}
+
+.footer .helpful-link ul li:before
+{
+	font-family: 'FontAwesome';
+	content: "\f054";
+	margin-right: 5px;
+	color: var(--primary);
+	font-size: 12px;
+	position: relative;
+	top: -1px;
+}
+
+.footer .footer-contact ul li
+{
+	margin-bottom: 24px;
+}
+
+/* end footer */
+
+
+/* start copyright */
+
+.copyright
+{
+	border-top: 1px solid #c0c0c0;
+	padding: 20px;
+}
+
+.copyright ul
+{
+	margin: 0;
+}
+
+.copyright ul li
+{
+	display: inline-block;
+}
+
+.copyright ul li a
+{
+	color: #777;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+/* end copyright */
